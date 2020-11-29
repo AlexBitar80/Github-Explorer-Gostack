@@ -1,46 +1,50 @@
-# Getting Started with Create React App
+<h3 align="center">
+	<img src="https://user-images.githubusercontent.com/56983783/100523837-3f2f9000-3192-11eb-915a-48d47122357e.png" alt="Github Explorer"/>
+</h3>
+<p align="center">
+  Uma aplicação simples que permite buscar por um usuário do Github juntamente com o repositório desse usuário e retorna dados desse repositório, como as estrelas, os forks e as issues, utilizando a API do próprio Github para servir os dados.
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <a href="#star-como-rodar">Como usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#pushpin-tecnologias-usadas-neste-projeto">Tecnologias</a>
+</p>
 
-## Available Scripts
+<h3 align="center">
+  <img width="559" height="316" src="https://user-images.githubusercontent.com/56983783/100524615-70ab5a00-3198-11eb-9e8f-d8134d622095.png" alt="dashboard page image"/>
+</h3>
 
-In the project directory, you can run:
+<h3 align="center">
+  <img width="559" height="316" src="https://user-images.githubusercontent.com/56983783/100524626-83259380-3198-11eb-92cf-74d79daef362.png" alt="dashboard page image"/>
+</h3>
 
-### `yarn start`
+## :pushpin: Tecnologias usadas neste projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+O projeto está utilizando as seguintes tecnologias:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+-  [reactJS](https://pt-br.reactjs.org/)
+-  [axios](https://www.npmjs.com/package/axios)
+-  [styled-components](https://styled-components.com/)
+-  [react-router-dom](https://reactrouter.com/web/guides/quick-start)
+-  [react-icons](https://react-icons.github.io/react-icons/)
 
-### `yarn test`
+## :star: Como rodar
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para clonar e rodar esse projeto você vai precisar do [Node](https://nodejs.org/en/) do [Yarn](https://yarnpkg.com/) do [Npm](https://www.npmjs.com/get-npm) e do [Git](https://git-scm.com/) instalado na rua máquina
 
-### `yarn build`
+```bash
+# Faça o clone deste repositório para qualquer pasta de sua preferencia
+$ git clone https://github.com/AlexBitar80/GithubExplorer-Bootcamp-Gostack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Vá até essa pasta
+$ cd GithubExplorer-Bootcamp-Gostack-master
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# rode esses comandos para instalar as dependências
+$ yarn || npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# use esses comandos para rodar o Projeto
+$ yarn start || npm run start
 
-### `yarn eject`
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+por padrão o projeto está rodando em (http://localhost:3000)
