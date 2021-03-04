@@ -6,6 +6,7 @@ import api from '../../services/api';
 import logoImg from '../../assets/Logo.svg';
 
 import { Title, Form, Repositories, Error } from './styles';
+import { Switch } from '../../components/Switch';
 
 interface Repository {
   full_name: string;
@@ -16,7 +17,7 @@ interface Repository {
   };
 }
 
-const Dashboard: React.FC = () => {
+export function Dashboard() {
   const [newRepo, setNewRepo] = useState('');
   const [inputError, setInputError] = useState('');
 
@@ -34,7 +35,7 @@ const Dashboard: React.FC = () => {
 
   useEffect(() => {
     localStorage.setItem(
-      '#githubExplorer:repositories',
+      '@GithubExplorer:repositories',
       JSON.stringify(repositories),
     );
   }, [repositories]);
@@ -64,6 +65,8 @@ const Dashboard: React.FC = () => {
 
   return (
     <>
+      <Switch />
+
       <img src={logoImg} alt="Github Explorer" />
       <Title>Explore repositórios no Github.</Title>
 
@@ -99,6 +102,4 @@ const Dashboard: React.FC = () => {
       </Repositories>
     </>
   );
-};
-
-export default Dashboard;
+}
