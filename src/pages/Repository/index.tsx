@@ -11,7 +11,7 @@ interface RepositoryParams {
   repository: string;
 }
 
-interface Repository {
+interface RepositoryProps {
   full_name: string;
   description: string;
   stargazers_count: number;
@@ -32,8 +32,8 @@ interface Issue {
   };
 }
 
-const Repository: React.FC = () => {
-  const [repository, setRepository] = useState<Repository | null>(null);
+export function Repository() {
+  const [repository, setRepository] = useState<RepositoryProps | null>(null);
   const [issues, setIssues] = useState<Issue[]>([]);
 
   const { params } = useRouteMatch<RepositoryParams>();
@@ -102,6 +102,4 @@ const Repository: React.FC = () => {
       </Issues>
     </>
   );
-};
-
-export default Repository;
+}
