@@ -1,4 +1,5 @@
 {
+  "homepage": "http://alexbitar80.github.io/Github-Explorer-Gostack",
   "name": "05-primeiro-projeto-react",
   "version": "0.1.0",
   "private": true,
@@ -15,9 +16,9 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-icons": "^4.2.0",
-    "react-switch": "^6.0.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
+    "react-switch": "^6.0.0",
     "styled-components": "^5.2.1",
     "typescript": "^4.0.3",
     "web-vitals": "^0.2.4"
@@ -25,6 +26,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -41,9 +44,9 @@
     ]
   },
   "devDependencies": {
+    "@types/js-cookie": "^2.2.6",
     "@types/react-router-dom": "^5.1.6",
     "@types/styled-components": "^5.1.4",
-    "@types/js-cookie": "^2.2.6",
     "@typescript-eslint/eslint-plugin": "^4.8.2",
     "@typescript-eslint/parser": "^4.8.2",
     "eslint": "^7.14.0",
@@ -55,6 +58,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4",
+    "gh-pages": "^3.1.0",
     "prettier": "^2.2.0"
   }
 }
